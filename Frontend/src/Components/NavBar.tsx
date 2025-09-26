@@ -8,7 +8,7 @@ interface NavbarProps {
 const Navbar: FC<NavbarProps> = ({ className }) => {  
   return (
     <header
-      className={`bg-white shadow-md border border-gray-200 rounded-full mx-[2%] mt-4 ${className || ""}`}
+className={`bg-white [box-shadow:0px_20px_30px_0px_rgba(0,0,0,0.05)] rounded-full mx-[2%] mt-4 ${className || ""}`}
     >
       <div className="flex w-full items-center justify-between px-6 py-3 mx-auto">
         {/* Logo */}

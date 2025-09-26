@@ -12,18 +12,19 @@ const App: React.FC = () => {
   const [category, setCategory] = useState("Spaces");
 
   return (
-    <>
+    <div className="bg-[#fefffe]">
       <Navbar className="sticky top-5" />
 
-      <Middle word={word} passage={passage} />
+      <Middle word={word} passage={passage} className="m-[200px]" />
 
       <Filter
         setWord={setWord}
         setPassage={setPassage}
         setCategory={setCategory}
+        className="m-10"
       />
   <Product />
-    </>
+    </div>
   );
 };
 
