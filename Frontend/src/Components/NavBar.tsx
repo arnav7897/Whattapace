@@ -1,4 +1,5 @@
-import React, { useState, useEffect,FC } from "react";
+import React, { useState, useEffect } from "react";
+import type { FC } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 
 interface NavbarProps {
