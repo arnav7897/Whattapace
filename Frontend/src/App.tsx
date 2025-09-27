@@ -15,7 +15,7 @@ const App: React.FC = () => {
     <div className="bg-[#fefffe]">
       <Navbar className="sticky top-5" />
 
-      <Middle word={word} passage={passage} className="m-[200px]" />
+      <Middle word={word} passage={passage} className="pt-[130px] pb-[100px]" />
 
       <Filter
         setWord={setWord}

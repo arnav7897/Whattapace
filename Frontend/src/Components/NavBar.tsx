@@ -11,15 +11,12 @@ const Navbar: FC<NavbarProps> = ({ className }) => {
 className={`bg-white [box-shadow:0px_20px_30px_0px_rgba(0,0,0,0.05)] rounded-full mx-[2%] mt-4 ${className || ""}`}
     >
       <div className="flex w-full items-center justify-between px-6 py-3 mx-auto">
-        {/* Logo */}
         <div className="w-[10%] text-2xl font-serif font-bold text-black">
           whattaplace
         </div>
 
-        {/* Navigation Links */}
         <nav className="w-[84%] hidden md:flex justify-between items-center gap-8 text-gray-600">
           <div className="flex w-[88%] justify-center gap-10">
-            {/* Find a Place */}
             <div className="flex gap-1.5 items-center group cursor-pointer">
               <a
                 href="/find"
@@ -29,7 +26,6 @@ className={`bg-white [box-shadow:0px_20px_30px_0px_rgba(0,0,0,0.05)] rounded-ful
               </a>
             </div>
 
-            {/* Host Your Space */}
             <div className="flex gap-1.5 items-center group cursor-pointer">
               <img
                 src="/arrow-right-thin-svgrepo-com.svg"
@@ -44,7 +40,6 @@ className={`bg-white [box-shadow:0px_20px_30px_0px_rgba(0,0,0,0.05)] rounded-ful
               </a>
             </div>
 
-            {/* How it Works */}
             <div className="flex gap-1.5 items-center group cursor-pointer">
               <img
                 src="/arrow-right-thin-svgrepo-com.svg"
@@ -60,7 +55,6 @@ className={`bg-white [box-shadow:0px_20px_30px_0px_rgba(0,0,0,0.05)] rounded-ful
             </div>
           </div>
 
-          {/* CTA Button */}
           <button className="w-[12%] ml-[2.38%] group relative flex items-center rounded-full border border-indigo-400 bg-gradient-to-r from-indigo-500 to-indigo-600 px-5 py-2 text-white shadow-md transition-all duration-300 ease-in-out hover:shadow-lg hover:from-indigo-600 hover:to-indigo-700">
             <span className="rounded-full transition-all duration-300 ease-in-out group-hover:rounded-r-none">
               Get in Touch
