@@ -49,7 +49,7 @@ const Filter: React.FC<FilterProps> = ({ setWord, setPassage, setCategory, class
     const cards = [
     {
       label: "Spaces",
-      word: "ALL Spaces",
+      word: "All Spaces",
       passage: "Enjoy, browse & book the most unique locations",
       category: "Spaces",
       image: "/all.png"
@@ -59,7 +59,7 @@ const Filter: React.FC<FilterProps> = ({ setWord, setPassage, setCategory, class
       word: "Photoshop",
       passage:
         "Discover unique backdrops for Fashion shoots • Product photography • Brand campaigns • Portrait sessions • Lifestyle content • Editorial spreads and more...",
-      category: "Photoshop",
+      category: "Photoshoot",
       image: "/2.png"
     },
     {
@@ -75,7 +75,7 @@ const Filter: React.FC<FilterProps> = ({ setWord, setPassage, setCategory, class
       word: "Workshops",
       passage:
         "Inspirational venues for Creative workshops • Skill-building sessions • Yoga Session • Team Brainstorming • Art & Music Groups  •  and more...",
-      category: "Workshops",
+      category: "Workshop",
        image: "/4.png"
     },
     {
@@ -88,10 +88,10 @@ const Filter: React.FC<FilterProps> = ({ setWord, setPassage, setCategory, class
     },
     {
       label: "Dance Shoot",
-      word: "Dance shoot",
+      word: "Dance Shoot",
       passage:
         "Unique space for Choreography videos • Dance reels • Performance captures • Dance tutorials • Competition prep • Movement art and more...",
-      category: "Dance shoot",
+      category: "Dance",
        image: "/6.png"
     },
     {
@@ -99,7 +99,7 @@ const Filter: React.FC<FilterProps> = ({ setWord, setPassage, setCategory, class
       word: "Film Shoot",
       passage:
         "Book locations for Short films • Documentaries • Commercial productions • Web series • Short-form Drama • Indie projects • Cinematic storytelling and more...",
-      category: "Film Shoot",
+      category: "Film",
        image: "/7.png"
     },
     {
@@ -107,7 +107,7 @@ const Filter: React.FC<FilterProps> = ({ setWord, setPassage, setCategory, class
       word: "Events",
       passage:
         "Create memorable gatherings for Brand Launch parties • Networking events • Brand activations • Performances • Celebrations • Corporate events • Baithaks • Book Launches and more...",
-      category: "Events",
+      category: "Event",
        image: "/8.png"
     },
     {
@@ -115,17 +115,19 @@ const Filter: React.FC<FilterProps> = ({ setWord, setPassage, setCategory, class
       word: "Exhibitions",
       passage:
         "Showcase in untapped spaces for Art exhibitions • Product displays • Gallery shows • Creative showcases • Installation art • Visual presentations and more...",
-      category: "Exhibitions",
+      category: "Exhibition",
        image: "/9.png"
     },
   ];
 
   return (
-    <div className={`flex flex-wrap justify-evenly overflow-x-auto no-scrollbar max-w-full ${className}`}>
+    <>
+    <div className={`flex flex-wrap justify-evenly overflow-x-auto no-scrollbar font-[var(--font-sans)] max-w-full ${className}`}>
       {cards.map((card, idx) => (
         <Card key={idx} {...card} onClick={handleClick} />
       ))}
     </div>
+      </>
   );
 };
 
